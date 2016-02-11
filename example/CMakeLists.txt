@@ -14,8 +14,8 @@ find_package(Qt5Quick)
 find_package(Qt5Qml)
 find_package(Qt5Network)
 
-file(GLOB SOURCE_FILES "${CMAKE_SOURCE_DIR}/src/*.h")
-file(GLOB HEADER_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE SOURCE_FILES "${CMAKE_SOURCE_DIR}/src/*.h")
+file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 
 add_definitions(-DNOMINMAX)
 add_definitions(-DUNICODE -D_UNICODE)
