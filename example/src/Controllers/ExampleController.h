@@ -4,6 +4,7 @@
 #include <qtcontrollayer/Controller.h>
 
 class QIntProperty;
+class TwoStateProperty;
 class ExampleController : public Controller
 {
     Q_OBJECT
@@ -16,5 +17,6 @@ private:
 
 private:
     QIntProperty * _pCurrentIndex;
+    TwoStateProperty * _pTrigger;
 };
 #endif // ExampleController_h__

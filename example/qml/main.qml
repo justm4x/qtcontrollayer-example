@@ -11,8 +11,11 @@ ApplicationWindow {
 	height: 300
 	visible: true
 
-	Text {
+	CLButton {
+		id: button	
+		prop: ControlLayer.getProperty("/Example/Trigger");
+		width: 80
+		height: 24
 		anchors.centerIn: parent
-		text: pCurrentIndex ? pCurrentIndex.displayValue : ""
 	}
 }
