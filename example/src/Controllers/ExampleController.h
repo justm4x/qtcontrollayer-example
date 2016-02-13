@@ -5,6 +5,7 @@
 
 class QIntProperty;
 class TwoStateProperty;
+class QRealProperty;
 class ExampleController : public Controller
 {
     Q_OBJECT
@@ -16,7 +17,8 @@ private:
     virtual void onPropertyChanged();
 
 private:
-    QIntProperty * _pCurrentIndex;
-    TwoStateProperty * _pTrigger;
+    QIntProperty * _pIntegerValue;
+    TwoStateProperty * _pBooleanValue;
+    QRealProperty * _pFloatValue;
 };
 #endif // ExampleController_h__
